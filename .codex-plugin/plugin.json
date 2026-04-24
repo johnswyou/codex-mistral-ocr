@@ -1,0 +1,29 @@
+{
+  "name": "codex-mistral-ocr",
+  "version": "0.1.0",
+  "description": "Codex skill and MCP server for parsing PDFs with Mistral OCR latest.",
+  "author": {
+    "name": "Open source contributors"
+  },
+  "homepage": "https://github.com/your-org/codex-mistral-ocr",
+  "repository": "https://github.com/your-org/codex-mistral-ocr",
+  "license": "MIT",
+  "keywords": ["codex", "mcp", "pdf", "ocr", "mistral", "document-ai"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Mistral PDF OCR",
+    "shortDescription": "Parse PDFs into searchable Markdown using Mistral OCR.",
+    "longDescription": "Adds an MCP server and skill so Codex can OCR local or public PDFs with Mistral OCR latest, cache Markdown, search results, and read selected pages.",
+    "developerName": "Open source contributors",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "websiteURL": "https://github.com/your-org/codex-mistral-ocr",
+    "privacyPolicyURL": "https://github.com/your-org/codex-mistral-ocr/blob/main/docs/security-and-privacy.md",
+    "termsOfServiceURL": "https://github.com/your-org/codex-mistral-ocr/blob/main/LICENSE",
+    "defaultPrompt": [
+      "Use Mistral PDF OCR to read ./paper.pdf and summarize it with page citations.",
+      "Use Mistral PDF OCR to extract tables from ./report.pdf."
+    ]
+  }
+}

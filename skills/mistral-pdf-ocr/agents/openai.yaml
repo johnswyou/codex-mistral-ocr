@@ -1,0 +1,12 @@
+interface:
+  display_name: "Mistral PDF OCR"
+  short_description: "Parse PDFs into searchable Markdown with Mistral OCR."
+  default_prompt: "Use Mistral PDF OCR to read a PDF, then cite page numbers from the OCR Markdown."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mistral_ocr"
+      description: "Mistral OCR PDF parser MCP server"
+      transport: "stdio"

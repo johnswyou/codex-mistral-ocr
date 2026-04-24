@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mistral_ocr": {
+      "command": "codex-mistral-ocr-mcp",
+      "env_vars": [
+        "MISTRAL_API_KEY",
+        "MISTRAL_OCR_CACHE_DIR",
+        "MISTRAL_OCR_TIMEOUT_SECONDS",
+        "MISTRAL_OCR_API_BASE"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 900,
+      "enabled": true
+    }
+  }
+}
