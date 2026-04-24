@@ -1,6 +1,6 @@
 # codex-mistral-ocr
 
-A GitHub-ready Codex extension that gives Codex an MCP tool for parsing PDFs with Mistral's `mistral-ocr-latest` API, plus a Codex skill/plugin wrapper that teaches Codex when to use it.
+A Codex extension that gives Codex an MCP tool for parsing PDFs with Mistral's `mistral-ocr-latest` API, plus a Codex skill/plugin wrapper that teaches Codex when to use it.
 
 The goal is simple: when Codex needs to read a PDF, it should prefer a purpose-built OCR workflow over brittle local text extraction. The MCP server sends a local PDF or public PDF URL to Mistral OCR, stores the full structured OCR result in a local cache, and returns Codex a compact preview plus a `result_id`. Codex can then read specific pages or search the cached OCR Markdown without flooding its context window.
 
